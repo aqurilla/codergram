@@ -1,0 +1,29 @@
+$primary-color: #3b5998;
+$secondary-color: #8b9dc3;
+$tertiary-color: #f7f7f7;
+
+$dark-color: #0f234d;
+$light-color: #8b9dc3;
+$danger-color: #d12020;
+$success-color: #30bd51;
+$signin-color: #07881c;
+$max-width: 1100px;
+
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Set background and text color
+@mixin set-background($color) {
+  background-color: $color;
+  color: set-text-color($color);
+}
+
+// Animation ease in
+@mixin easeInOut {
+  transition: all 0.25s ease-in-out;
+}
