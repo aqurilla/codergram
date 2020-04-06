@@ -10,7 +10,7 @@ $signin-color: #07881c;
 $max-width: 1100px;
 
 @function set-text-color($color) {
-  @if (lightness($color) > 50) {
+  @if (lightness($color) > 60) {
     @return #333;
   } @else {
     @return #fff;
@@ -26,4 +26,33 @@ $max-width: 1100px;
 // Animation ease in
 @mixin easeInOut {
   transition: all 0.25s ease-in-out;
+}
+
+// Margin, Padding
+$spaceamounts: (1, 2, 3, 4, 5);
+
+@each $space in $spaceamounts {
+  .m-#{$space} {
+    margin: #{$space}rem;
+  }
+
+  .my-#{$space} {
+    margin: #{$space}rem 0;
+  }
+
+  .mx-#{$space} {
+    margin: 0 #{$space}rem;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}rem;
+  }
+
+  .py-#{$space} {
+    padding: #{$space}rem 0;
+  }
+
+  .px-#{$space} {
+    padding: 0 #{$space}rem;
+  }
 }
