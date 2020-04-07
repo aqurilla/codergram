@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codergram | Add Education</title>
+    <meta name="author" content="Nitin Suresh" />
+
+    <script
+      src="https://kit.fontawesome.com/a61fe6d01b.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar bg-primary">
+      <h1>
+        <a href="dashboard.html">
+          <i class="fab fa-connectdevelop"></i> Codergram
+        </a>
+      </h1>
+      <ul>
+        <li><a href="profiles.html">Developers</a></li>
+        <li><a href="posts.html">Posts</a></li>
+        <li>
+          <a href="dashboard.html">
+            <i class="fas fa-user"></i>
+            <span class="hide-sm">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span class="hide-sm">Logout</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Section -->
+    <section class="container">
+      <h1 class="large text-primary">Add education</h1>
+      <p class="lead">
+        <i class="fas fa-graduation-cap text-primary"></i> Add a
+        school/institute you have attended
+      </p>
+      <small>* = required fields</small>
+      <form class="form">
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* School / Institute"
+            name="school"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="text"
+            placeholder="* Degree / Certificate"
+            name="degree"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Field" name="fieldofstudy" />
+        </div>
+        <div class="form-group">
+          <h4>From Date</h4>
+          <input type="date" name="from" />
+        </div>
+        <div class="form-group">
+          <h4>To Date</h4>
+          <input type="date" name="to" />
+        </div>
+        <div class="form-group">
+          <p>
+            <input type="checkbox" name="current" value="" /> Current School
+          </p>
+        </div>
+        <div class="form-group">
+          <textarea
+            name="description"
+            cols="30"
+            rows="5"
+            placeholder="Program Description"
+          ></textarea>
+        </div>
+        <input type="submit" class="btn btn-primary my-1" />
+        <a class="btn my-1" href="dashboard.html">Go Back</a>
+      </form>
+    </section>
+  </body>
+</html>

@@ -5,6 +5,7 @@
 @import 'alerts';
 @import 'profiles';
 @import 'badges';
+@import 'posts';
 
 * {
   box-sizing: border-box;
@@ -81,3 +82,5 @@ img {
     text-align: center;
   }
 }
+
+@import 'media';
