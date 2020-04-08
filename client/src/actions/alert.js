@@ -2,7 +2,7 @@ import { v4 as uuid4 } from 'uuid';
 
 import { SET_ALERT, REMOVE_ALERT } from './types';
 
-export const setAlert = (msg, alertType, timeout = 1500) => (dispatch) => {
+export const setAlert = (msg, alertType, timeout = 2500) => (dispatch) => {
   const id = uuid4();
   dispatch({
     type: SET_ALERT,
