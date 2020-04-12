@@ -14,7 +14,7 @@ import {
 // Get current user's profile
 export const getCurrentProfile = () => async (dispatch) => {
   try {
-    const res = await axios.get('api/profile/me');
+    const res = await axios.get('/api/profile/me');
     dispatch({
       type: GET_PROFILE,
       payload: res.data,
@@ -34,7 +34,7 @@ export const getProfiles = () => async (dispatch) => {
   });
 
   try {
-    const res = await axios.get('api/profile');
+    const res = await axios.get('/api/profile');
     dispatch({
       type: GET_PROFILES,
       payload: res.data,
@@ -50,7 +50,8 @@ export const getProfiles = () => async (dispatch) => {
 // Get profile by ID
 export const getProfileById = (userId) => async (dispatch) => {
   try {
-    const res = await axios.get(`api/profile/user/${userId}`);
+    const res = await axios.get(`/api/profile/user/${userId}`);
+
     dispatch({
       type: GET_PROFILE,
       payload: res.data,
@@ -66,7 +67,7 @@ export const getProfileById = (userId) => async (dispatch) => {
 // Get Github repos
 export const getGithubRepos = (ghusername) => async (dispatch) => {
   try {
-    const res = await axios.get(`github/profile/github/${ghusername}`);
+    const res = await axios.get(`/api/profile/github/${ghusername}`);
     dispatch({
       type: GET_REPOS,
       payload: res.data,
