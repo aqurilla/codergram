@@ -1,6 +1,0 @@
-{
-  "mongoURI": "mongodb+srv://nitin123:nitin123@codergram-obs70.mongodb.net/test?retryWrites=true&w=majority",
-  "jwtSecret": "mysecrettoken",
-  "githubClientId": "ad37084c26d4b55810f8",
-  "githubSecret": "7a8771b6de6a2a8848a9757d59e79579d80097b1"
-}
