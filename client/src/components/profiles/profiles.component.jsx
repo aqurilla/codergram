@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 
 import { getProfiles } from '../../actions/profile';
 import ProfileItem from './profileitem.component';
+import Spinner from '../../img/spinner.gif';
 
 const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
   useEffect(() => {
@@ -12,8 +13,8 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
 
   return (
     <Fragment>
-      {loading ? (
-        <Fragment>Loading</Fragment>
+      {profiles === null || loading ? (
+        <img src={Spinner} alt="" style={{ width: 300 }} />
       ) : (
         <Fragment>
           <h1 className="large text-primary">Developers</h1>

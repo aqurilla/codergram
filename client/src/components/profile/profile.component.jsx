@@ -9,6 +9,7 @@ import ProfileAbout from './profileabout.component';
 import ProfileExperience from './profileexperience.component';
 import ProfileEducation from './profileeducation.component';
 import ProfileGithub from './profilegithub.component';
+import Spinner from '../../img/spinner.gif';
 
 const Profile = ({
   match,
@@ -23,12 +24,11 @@ const Profile = ({
   return (
     <Fragment>
       {profile === null || loading ? (
-        'Loading...'
+        <img src={Spinner} alt="" style={{ width: 300 }} />
       ) : (
-        // <Spinner />
         <Fragment>
           <Link to="/profiles" className="btn btn-light">
-            Back to Profiles
+            All Profiles
           </Link>
           {auth.isAuthenticated &&
             auth.loading === false &&

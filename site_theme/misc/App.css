@@ -101,7 +101,7 @@
   color: #fff;
 }
 .bg-light {
-  background-color: #cfd9f0;
+  background-color: #8b9dc3;
   color: #333;
   border: #ccc 1px solid;
 }
@@ -161,7 +161,7 @@
   text-align: left;
 }
 .table th {
-  background: #cfd9f0;
+  background: #8b9dc3;
 }
 .form-group {
   margin: 1.2rem 0;
@@ -213,7 +213,7 @@
 }
 .btn {
   display: inline-block;
-  background: #cfd9f0;
+  background: #8b9dc3;
   color: #333;
   padding: 0.5rem 1.5rem;
   cursor: pointer;
@@ -267,7 +267,7 @@
   padding: 0.5rem;
   margin: 1rem;
   opacity: 0.9;
-  background: #cfd9f0;
+  background: #8b9dc3;
   color: #333;
 }
 .alert.alert-primary {
@@ -412,7 +412,7 @@
   padding: 0.1rem;
   text-align: center;
   margin: 0.3rem;
-  background: #cfd9f0;
+  background: #8b9dc3;
   color: #333;
 }
 .badge.badge-primary {
@@ -448,14 +448,15 @@
   text-align: center;
 }
 .post img {
-  width: 150px;
+  width: 100px;
 }
 .post .comment-count {
-  background: var(--light-color);
-  color: var(--primary-color);
+  background: #8b9dc3;
+  color: #000;
   padding: 0.1rem 0.2rem;
   border-radius: 5px;
   font-size: 0.8rem;
+  margin-left: 5px;
 }
 
 .post .btn {
@@ -519,7 +520,7 @@ img {
   margin: 0 0.25rem;
 }
 .navbar a:hover {
-  color: #cfd9f0;
+  color: #8b9dc3;
 }
 .landing {
   position: relative;
