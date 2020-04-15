@@ -1,7 +1,11 @@
 # Codergram - Social Networking application built using NodeJS, Express, React & MongoDB
 
-Features:
+Social Networking web app with user registration & login, forum posts and comments functionality, portfolio/profile creation and Github repository listing. Back-end API routes developed with Express with a React/Redux front-end.
 
-1. Created REST API routes for registering users
-2. Mongoose for data modeling
-3. Register user and get token using jsonwebtoken
+[Live Demo](https://codergram-live.herokuapp.com/)
+
+Screenshots:
+![alt text](screencaps/home.JPG)
+![alt text](screencaps/posts.JPG)
+![alt text](screencaps/developers.JPG)
+![alt text](screencaps/register.JPG)
